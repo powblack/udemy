@@ -1,0 +1,9 @@
+Doccstring, no python para conseguir fazer comentarios ou anotações maiores no python, podemos usar o """.
+
+exemplo:
+    """
+    Ola mundo,
+    Esse é um teste de comentarios
+    basta usar aspas triplas, abrindo e fechando-as
+    desta forma que está esse comentário
+    """
