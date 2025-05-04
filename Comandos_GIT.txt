@@ -1,0 +1,33 @@
+git config --global user.name "Seu Nome": Define o seu nome de usuário para os commits.
+
+git config --global user.email "seu.email@exemplo.com": Define o seu endereço de e-mail para os commits.
+
+git init: Cria um novo repositório Git no diretório atual.
+
+git clone <URL do repositório>: Clona um repositório remoto para o seu computador.
+
+git add <nome do arquivo>: Adiciona um arquivo ao índice de staging.
+
+git add .: Adiciona todos os arquivos modificados no diretório atual ao índice.
+
+git commit -m "Mensagem do commit": Salva as alterações no repositório com uma mensagem descritiva.
+
+git push origin <nome da branch>: Envia as alterações para um repositório remoto.
+
+git pull origin <nome da branch>: Obtém as alterações de um repositório remoto e as mescla na sua branch local.
+
+git status: Exibe o status dos arquivos no diretório de trabalho e no índice.
+
+git log: Exibe o histórico de commits.
+
+git diff: Exibe as diferenças entre as versões.
+
+git branch: Lista as branches locais.
+
+git checkout <nome da branch>: Muda para uma branch específica.
+
+git merge <nome da branch>: Mescla as alterações de uma branch para a branch atual.
+
+Comandos do Bash (Git Bash):
+
+O Git Bash também inclui comandos do Bash, como cd para mudar de diretório, ls para listar arquivos, rm para remover arquivos e mkdir para criar diretórios. 
