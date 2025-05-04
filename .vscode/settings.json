@@ -1,0 +1,11 @@
+{
+    "explorer.compactFolders": false,
+    "scm.compactFolders": true,
+    "editor.suggest.showFolders": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.executorMap": {        
+        "python": "cls ; python -u"
+    },
+    "code-runner.ignoreSelection": true
+}

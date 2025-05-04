@@ -1,0 +1,39 @@
+no prompt de comando, para conseguir executar dois comandos ao mesmo tempo:
+    use o ( && )
+
+    exemplo: dir && cls
+
+comando cls: limpa o terminal, obs: o comando clear não funciona no windows 11 !!!
+
+porem no terminal do vscode não funciona o &&, e sim o ; 
+    exemplo : dir ; cls
+
+comandos json para deixa o executavel melhor no vscode
+    "code-runner.runInTerminal": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.executorMap": {        
+        "python": "cls ; python -u"
+    },
+    "code-runner.ignoreSelection": true
+
+comando cls ; python = executa o arquivo python no terminal limpando os comandos anteriores
+para deixar mais arrumado o terminal.
+
+o comando "code-runner.ignoreSelection": true = tira a opção de executar somente onde esta selecionado
+
+extenção material icon theme = para deixar os icones mais bonitos
+e o tema = om theme dracula
+
+codigo json para o vscode
+
+{
+    "explorer.compactFolders": false,
+    "scm.compactFolders": true,
+    "editor.suggest.showFolders": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.executorMap": {        
+        "python": "cls ; python -u"
+    },
+    "code-runner.ignoreSelection": true
+}
