@@ -7,6 +7,7 @@
 
 
 nome_completo = 'jonathan carvalho gregorio'
+idade = 30
+maior_de_idade = idade >= 18
+print(nome_completo, idade, maior_de_idade)
 
-
-print(nome_completo)
