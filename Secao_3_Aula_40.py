@@ -10,3 +10,12 @@ a expressao inteira será avaliada naquele valor
 
 """
 
+entrada = input("type E para ENTRAR: ")
+
+if entrada == 'E':
+    print("You entered the system !!")
+
+else:
+    print("***** ERROR ******")
+    print("You need to type the word correctly !!")
+    print("*** TRY AGAIN ****")
