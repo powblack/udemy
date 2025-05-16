@@ -10,9 +10,13 @@ a expressao inteira será avaliada naquele valor
 
 """
 
-entrada = input("type E para ENTRAR: ")
+login = input("Login: ")
+senha = input("Senha: ")
 
-if entrada == 'E':
+
+
+
+if login == 'powblack' and senha == 'Cgthan158699':
     print("You entered the system !!")
 
 else:
