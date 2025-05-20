@@ -26,3 +26,4 @@ print(f"{variavel2:>>10}") # adicionando simbolo à esquerda
 print(f"{variavel2:<>10}") # adicionando simbolo à direta
 print(f"{variavel2:%^10}") # adicionando simbolo ao centro
 
+print(f'O hexadecimal de 1500 é {1500:08X}')
