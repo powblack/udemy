@@ -1,25 +1,11 @@
-#calculo de splitagem
+#testes
 
-spliter_10_90 = 11, 0.7
+horas_curso = int(input("Quantas horas é o curso? "))
+horas = int(input("Quantas horas por dia você estuda? "))
+dias = horas_curso / 24
+dias_para_acabar = horas_curso / horas
 
-perda1 = -11
-perda2 = -0.7
-
-perda_1x8 = -10.5
-perda_1x16 = -13.5
-
-potencia_olt = 5
-
-sinal_cto = perda1 + perda_1x8 + potencia_olt
-
-a = 1
-b = 2
-c = 3
-
-string = 'a={} b={} c={:.2f}'
-formato = string.format(a, b, c)
-
-print(formato)
-
-
-print(sinal_cto)
+print(f"São {horas_curso} horas total do curso")
+print(f"São {dias:.0f} dias para terminar o curso")
+print(f"Mas como eu estudo somente {horas} hr por dia")
+print(f"No seu ritmo, são {dias_para_acabar:.0f} dias para terminar")
