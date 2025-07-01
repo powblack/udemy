@@ -12,6 +12,7 @@ local_carro = int(local_carro)
 
 # valores constantes, ou base de dados
 #limites difinidos para o calculo do radar
+
 RADAR_1 = 60 # LIMITE DE VELOCIDADE 
 LOCAL_1 = 100 # LOCAL ONDE SE ENCONTRA O RADAR
 RADAR_RANGE = 1 # DISTANCIA EM METROS DA LEITURA
