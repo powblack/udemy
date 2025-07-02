@@ -1,0 +1,26 @@
+USE O COMANDO ( isdigit ) para chegar se um imput ou dado de entrada
+é um numero!
+
+ex: variavel = input('digite um numero')
+    if variavel.isdigit():
+        print('vc digitou um numero')
+    else:
+        print('vc nao digitou um numero)
+
+----------------------------------
+
+
+impar ou para
+
+para eu checar eu uso o comando ==
+ex:
+    par_impar = numero % 2 == 0
+
+nesse comando a variável par_impar é o resultado
+da operação % , esse comando % resulta no resto 
+da divisão, e logo em seguida o comando == 0 checa
+se o resto da divisão é 0, caso for verdadeiro
+seguinifica que o numero é par!!!
+
+use o try e execpt no lugar do if e else,
+pois é mais simples e rapido para condições.
