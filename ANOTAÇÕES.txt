@@ -24,3 +24,34 @@ seguinifica que o numero é par!!!
 
 use o try e execpt no lugar do if e else,
 pois é mais simples e rapido para condições.
+
+
+----------
+
+comando len conta quantos digitos tem uma string 
+e retorna um resultado com numero inteiro.
+ex: variavel = len(nome)
+
+--------
+
+fatiamento de string: usando o comando [1]
+ex: nome = jonathan
+    print(nome[1])
+
+nesse exemplo será mostrado somente 1 caractere 
+contando do indice 1 que é a letra n.
+
+ex 2: nome = jonathan 
+      print(nome[:3])
+
+esse codigo imprime uma sequencia de 3 caracteres
+da string na variavel.
+
+ex 3: nome = jonathan
+      print(nome[4:])
+    
+dessa forma imprime sequencia de 4 caracteres
+de tras para frente.
+
+---------------------
+
