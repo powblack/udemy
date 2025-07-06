@@ -75,7 +75,7 @@ print("Download was a sucessfull")
 
  """
 
-max_linhas = input("Qual o Maximo de fichas? ")
+""" max_linhas = input("Qual o Maximo de fichas? ")
 linha = 0
 
 linhas = int(max_linhas)
@@ -87,5 +87,25 @@ while linha < linhas:
 print("            ")
 print("Seu Formulario foi gerado !!!")
 
+ """
+
+# INTERANDO STRINGS COM WHILE
+
+nome = "Jonathan Carvalho"
+#
+
+tamanho_nome = len(nome) # retorna quantidade de caracteres em numero inteiro
 
 
+contador = 0
+contadorint = int(contador)
+
+while contador < tamanho_nome:
+    if ' ' in nome:
+        tamanho_nome - 1
+        
+    print(nome[contador])
+    contador += 1
+
+
+print(f'Seu nome tem {tamanho_nome} letras')
