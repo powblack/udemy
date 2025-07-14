@@ -91,21 +91,50 @@ print("Seu Formulario foi gerado !!!")
 
 # INTERANDO STRINGS COM WHILE
 
-nome = "Jonathan Carvalho"
-#
+# nome = "Jonathan_"
 
-tamanho_nome = len(nome) # retorna quantidade de caracteres em numero inteiro
+# tamanho_nome = len(nome) # retorna quantidade de caracteres em numero inteiro
 
-
-contador = 0
-contadorint = int(contador)
-
-while contador < tamanho_nome:
-    if ' ' in nome:
-        tamanho_nome - 1
-        
-    print(nome[contador])
-    contador += 1
+# contador = 0
+# contadorint = int(contador)
 
 
-print(f'Seu nome tem {tamanho_nome} letras')
+# while contador < tamanho_nome:
+#     if ' ' in nome or '_' in nome:
+#         print('digite somente o primeiro nome !!!')
+#         break
+
+#     print(nome[contador])
+#     contador += 1
+
+# print(f'Seu nome tem {tamanho_nome} letras')
+
+# -------------------------------------------------------
+
+nome = input("Qual o seu nome? ")
+
+
+indice = 0 # comando pega a string na posição de acordo com o numero
+nome_na_vertical = '' # variavel para mostrar o print do nome sendo digitado na vertical
+
+"""
+Na função abaixo, o WHILE vai pegar o valor da variavel INDICE e vai
+imprimir na tela essa string, e na variavel NOME_NA_VERTICAL, vai
+concatenar com a string vazia no inicio do codigo, logo em seguida
+continuará concatenando ate acabar a string toda, e imprimindo na vertical
+como se estivesse digitando, isso acontece por conta somente da
+CONCATENIZAÇÃO!!!
+
+A variavel letra dentro do bloco da funcao WHILE, só é lida dentro do
+bloco, e esta pegando a string no indice gerado e fazendo a concatenação
+com a variavel NOME_NA_VERTICAL.
+
+"""
+
+while indice < len(nome):
+    letra = nome[indice] #variavel pega a string no indice gerado 
+    nome_na_vertical += letra #variavel faz a concatenação com a variavel LETRA
+    indice += 1
+
+print(nome_na_vertical)
+
