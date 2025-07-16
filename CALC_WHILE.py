@@ -10,10 +10,14 @@ print("FAÇA SEUS CALCULOS ABAIXO")
 
 while True:
     numero_1 = input("Numero:  ")
+    operador = input("Operador > + - / *:  ")
     numero_2 = input("Numero:  ")
-    operador = input("Operador:  ")
+
 
     valido = None #essa variavel eu uso para validar em try
+
+    num1_float = 0
+    num2_float = 0
 
     try:
         num1_float = float(numero_1)
@@ -35,6 +39,39 @@ while True:
     if valido is None:
         print("Digite apenas numeros! ")
         print("Tente novamente! ")
+
+    #função para verificar se os operadores estão sendo digitados
+    #corretamente
+
+    operadores = "+-/*"
+
+    if operador not in operadores:
+        print("Operador inválido!!")
+        continue
+    
+    #Função que verifica a quantidade de strings, se for maior que 1
+    #a função abaixo é executada, imprimindo uma mensagem e retornando
+    #para o inicio da função while
+
+    if len(operador) > 1:
+        print("Operação inválida, digite apenas um operador!!")
+        continue
+
+    #PARTE DE CALCULOS DA CALULADORA !!!
+
+    print("Resultado abaixo, confira!")
+
+    if operador == "+":
+        print(f"{numero_1} + {numero_2} = ",num1_float + num2_float)
+    elif operador == "-":
+        print(f"{numero_1} - {numero_2} = ",num1_float - num2_float)
+    elif operador == "/":
+        print(f"{numero_1} / {numero_2} = ",num1_float / num2_float)
+    elif operador == "*":
+        print(f"{numero_1} * {numero_2} = ",num1_float * num2_float)
+    else:
+        print("Houve algum error!!...")
+
 
     """
     ESSE É AS FUNÇÕES FINAL DA CALCULADORA !!
