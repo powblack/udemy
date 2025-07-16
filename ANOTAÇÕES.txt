@@ -55,3 +55,11 @@ de tras para frente.
 
 ---------------------
 
+funções =
+
+.lower() #converte a string para letra minuscula / retorna valor STRING
+.startwith() #verifca qual valor começa, e retorna um valor boleano = True or False
+.endwith() #verifca qual valor termina e retorna um valor boleano
+
+
+
