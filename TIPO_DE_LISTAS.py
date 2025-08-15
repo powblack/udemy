@@ -12,3 +12,59 @@ lista = list(range(1, 6)) - usando a função list()
 
 
 """
+import os
+
+os.system('cls' if os.name == 'nt' else 'clear')  # limpa o terminal
+
+lista = [1, 2, 3, 4, 5]  # criando uma lista com colchetes
+
+print(lista)  # imprime a lista completa
+
+
+lista.append(1)  # adiciona o elemento 1 no final da lista
+
+
+print(lista)  # imprime a lista completa após adicionar o elemento
+
+
+lista.pop()  # remove o último elemento da lista
+print(lista)  # imprime a lista completa após remover o último elemento
+
+
+lista.clear()  # remove todos os elementos da lista
+print(lista)  # imprime a lista completa após limpar todos os elementos
+
+"""
+-----------------------------------------------------------------
+
+
+insert - insere um elemento em um índice específico
+append - adiciona um elemento no final da lista
+pop - remove o último elemento da lista
+clear - remove todos os elementos da lista
+extend - adiciona vários elementos no final da lista
+del - remove um elemento específico da lista
+remove - remove o primeiro elemento encontrado com o valor especificado
+
+
+-----------------------------------------------------------------
+
+cuidados com dados mutuáveis, como listas, dicionários e conjuntos,
+
+
+
+
+exercicios 
+
+exibir os indices da lista 
+
+"""
+
+
+lista = ['a', 'b', 'c', 'd', 'e']  # criando uma lista de letras
+indices = range(len(lista))  # criando uma lista de índices
+
+for indice in indices:  # iterando sobre os índices
+    print(f'Índice: {indice}, Valor: {lista[indice]}')  # imprimindo o índice e o valor correspondente
+
+
