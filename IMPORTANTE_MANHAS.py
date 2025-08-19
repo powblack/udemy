@@ -43,3 +43,16 @@ print(variavel1)  # imprime 1
 o * é usado para desempacotar listas ou tuplas, como resto
 
 """
+"""
+
+o try e except são usados para tratar exceções
+se ocorrer um erro no bloco try, o código no bloco except será executado
+vantagem de usar try e except:
+- evita que o programa quebre com erros inesperados
+- permite que você trate erros de forma controlada
+- possibilita a execução de código alternativo em caso de erro
+
+ao invez de usar o if e else, o try e except
+podem ser mais eficientes e limpos, especialmente.
+ 
+"""
