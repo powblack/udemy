@@ -29,4 +29,17 @@ precisa atualizar os índices de todos os elementos seguintes.
 
 """
 
+"""
+O USO DE _ , UNDERLINE É UMA CONVENÇÃO PARA INDICAR
+QUE A VARIÁVEL É PARA USO INTERNO, NÃO DEVE SER ACESSADA
+# fora do módulo ou classe onde foi definida.
 
+EXEMPLE: 
+
+variavel1, variavel2, _ = [1, 2, 3]  # o underscore indica que a variável não será usada
+print(variavel1)  # imprime 1
+
+
+o * é usado para desempacotar listas ou tuplas, como resto
+
+"""

@@ -67,4 +67,45 @@ indices = range(len(lista))  # criando uma lista de índices
 for indice in indices:  # iterando sobre os índices
     print(f'Índice: {indice}, Valor: {lista[indice]}')  # imprimindo o índice e o valor correspondente
 
+"""
+TUPLAS SÃO IMUTAVEIS, OU SEJA, NÃO PODEM SER ALTERADAS
+AS LISTAS SÃO MUTÁVEIS, OU SEJA, PODEM SER ALTERADAS
 
+E SÃO MAIS RÁPIDAS AS TUPLAS, POIS NÃO PRECISAM
+ATUALIZAR OS ÍNDICES DOS ELEMENTOS SEGUIDOS.
+
+
+"""
+
+#ENUMERATE É UMA FUNÇÃO QUE RETORNA UM OBJETO ITERÁVEL
+#QUE CONTÉM PARES DE ÍNDICES E VALORES DE UMA LISTA OU
+
+lista = ['a', 'b', 'c', 'd', 'e']  # criando uma lista de letras
+
+#lista.append('f')  # adicionando o elemento 'f' no final da lista
+
+lista_enumerada = enumerate(lista)  # enumerando a lista
+
+print(lista)
+print(lista_enumerada)
+
+for item in lista_enumerada:  # iterando sobre a lista enumerada
+    print(item)  # imprimindo o item (índice, valor)
+
+"""
+o intereitor (enumerate) retorna um objeto iterável, porem usando 
+na variavel antes das funções ou operações, ele é consumido 
+pelo primeiro loop, ou seja, não pode ser usado novamente
+ou seja, usar o interator direto na função.
+veja o exemplo abaixo:
+
+"""
+
+lista = ['a', 'b', 'c', 'd', 'e']  # criando uma lista de letras
+
+
+#for item in enumerate(lista):  # iterando sobre a lista enumerada
+ #   print(item)  # imprimindo o item (índice, valor)
+
+for item in lista:
+    print(item)  # imprimindo o item (valor) da lista
