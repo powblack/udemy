@@ -1,0 +1,20 @@
+baixar extenção coderunner
+
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "python": "cls ; python -u",
+    }
+
+
+comandos para editar no json config
+
+caminho: C:\User\pc\AppData\Roaming\Code\User\settings.json
+
+ou assistir aula: https://www.udemy.com/course/python-3-do-zero-ao-avancado/learn/lecture/34543580#overview
+
+
+
+
+
+obs: C:\\Users\\JHON\\AppData\\Local\\Programs\\Python\\Python39\\python.exe
