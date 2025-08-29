@@ -38,7 +38,7 @@ print("\n----------------------------------------------------\n")
 
 while True:
     cpf = int(input("Digite seu CPF (apenas números): "))
-
+    
     if cpf <= 0 or cpf > 99999999999:
         print("Porfavor, digite somente os 11 digitos do CPF! ")
         continue
@@ -50,26 +50,10 @@ while True:
 
 #Convertendo o CPF para string e garantindo que tenha 11 dígitos
 #a função zfill adiciona zeros à esquerda se necessário, para completar 11 dígitos
-
-"""
-
-cpf = str(cpf).zfill(11) # Adiciona zeros à esquerda se necessário
-
-# Validando se o CPF tem 11 dígitos
-if len(cpf) != 11:
-    print("CPF inválido! Deve conter 11 dígitos.")
-    exit()
-
-else:
-    print(f"CPF válido com 11 dígitos: {cpf}")
-
-
-
 # Extraindo os 9 primeiros dígitos do CPF
 # Calculando o primeiro dígito verificador
 
-"""
-
+cpf = str(cpf).zfill(11)
 cpf_str = str(cpf)
 nove_digitos = cpf_str[:9]
 soma = 0
