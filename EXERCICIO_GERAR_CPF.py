@@ -35,20 +35,23 @@ print("\n----------------------------------------------------\n")
 print("BACKEND - GERADOR DE CPF - PRIMEIRO DIGITO VERIFICADOR\n")
 print("\n----------------------------------------------------\n")
 
+
 while True:
+    cpf = int(input("Digite seu CPF (apenas números): "))
 
-    #Validando a entrada do CPF apenas com números.
-
-    try:
-        cpf = int(input("Digite seu CPF (apenas números): "))
-        print(f"CPF OK")
-        break
-    except ValueError:
-        print("Por favor, digite apenas números.")
+    if cpf <= 0 or cpf > 99999999999:
+        print("Porfavor, digite somente os 11 digitos do CPF! ")
         continue
+
+    else:
+        break
+
+#---------------------------------------------------------------
 
 #Convertendo o CPF para string e garantindo que tenha 11 dígitos
 #a função zfill adiciona zeros à esquerda se necessário, para completar 11 dígitos
+
+"""
 
 cpf = str(cpf).zfill(11) # Adiciona zeros à esquerda se necessário
 
@@ -60,11 +63,15 @@ if len(cpf) != 11:
 else:
     print(f"CPF válido com 11 dígitos: {cpf}")
 
-# Extraindo os 9 primeiros dígitos do CPF
-nove_digitos = cpf[:9]
-print(f"Os 9 primeiros digitos do CPF são: {nove_digitos}")
 
+
+# Extraindo os 9 primeiros dígitos do CPF
 # Calculando o primeiro dígito verificador
+
+"""
+
+cpf_str = str(cpf)
+nove_digitos = cpf_str[:9]
 soma = 0
 
 for i, digito in enumerate(nove_digitos):
@@ -87,28 +94,20 @@ print(f"A multiplicação da soma por 10 é: {multiplicacao}")
 resto = multiplicacao % 11
 print(f"O resto da divisão por 11 é: {resto}")
 
+
 # Validando o primeiro dígito verificador
 
-if resto > 9:
-    primeiro_digito = 0
-    if primeiro_digito == 0:
-        print("\n-------------------\n")
-        print("\n-------------------\n")
-        print("\n-------------------\n")
-        print("\n-------------------\n")
-        print(f"CFP: {cpf} É INVÁLIDO, TENTE NOVAMENTE!!!")
-        print("\n-------------------\n")
+primeiro_digito = cpf_str[9]
+resto_str = str(resto)
+print(primeiro_digito)
 
+
+
+if resto_str == primeiro_digito:
+    print("ok")
 
 else:
-    primeiro_digito = resto
+    print("não valido")
 
-print(f"O primeiro dígito verificador é: {primeiro_digito}")
 
-print("\n-------------------\n")
-print("\n-------------------\n")
-print("\n-------------------\n")
-print("\n-------------------\n")
-print(f"CFP: {cpf} É VÁLIDO, PARABENS!!!")
-print("\n-------------------\n")
 
