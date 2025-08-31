@@ -56,3 +56,11 @@ ao invez de usar o if e else, o try e except
 podem ser mais eficientes e limpos, especialmente.
  
 """
+
+"""
+USAR O COMANDO  os.system('cls') PARA LIMPAR O TERMINAL NOS LOOPs
+
+IMPORT OS
+
+
+"""

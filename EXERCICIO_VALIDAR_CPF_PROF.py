@@ -1,18 +1,44 @@
-cpf = '15869961777'
+cpf = str(input("Enter your CPF: "))
 
-nove_digitos = cpf[:9] # fatiamento da str, usando o : e o 9 quer dizer que a função vai parar no indice 9
+nine_digits = cpf[:9] # slicing the str, using : and the 9 means that the function will stop at index 9
+countdown = 10
+result = 0
 
-contador_regressivo = 10
+for digit in nine_digits:
+    result += int(digit) * countdown
+    countdown -= 1 # that -= is the function that subtracts the number 10, that is, each time it passes and it decreases
 
-resultado = 0
+digit = (result * 10) % 11
 
-for digito in nove_digitos:
-    resultado += int(digito) * contador_regressivo
-    contador_regressivo -= 1 # o -= é a função que faz a subtração do numero 10, ou seja, cada fez que passa ele diminui
+digit_str = str(digit)
 
-digito = (resultado * 10) % 11
+nine_digit = cpf[9]
 
-digito = digito if digito <= 9 else 0
+if digit_str != nine_digit:
+    print("CPF is invalid !! Try again ...")
 
-print(digito)
+else:
+    print("Fist Digit is OK. passed")
 
+#---------------------------------------------
+# calculating the next digit, second digit
+
+ten_digits = cpf[:10] # slicing the str, using : and the 9 means that the function will stop at index 9
+countdown2 = 11
+result2 = 0
+
+for digit2 in ten_digits:
+    result2 += int(digit2) * countdown2
+    countdown2 -= 1 # that -= is the function that subtracts the number 11, that is, each time it passes and it decreases
+
+digit2 = (result2 * 10) % 11
+
+digit_str2 = str(digit2)
+
+ten_digit = cpf[10]
+
+if digit_str2 != ten_digit:
+    print("Second Digit is incorrect, Try again ...")
+
+else:
+    print("Second Digit passed, CPF is OK!")

@@ -63,3 +63,4 @@ funções =
 
 
 
+LIMPAR TERM
