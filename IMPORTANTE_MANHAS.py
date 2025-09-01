@@ -63,4 +63,11 @@ USAR O COMANDO  os.system('cls') PARA LIMPAR O TERMINAL NOS LOOPs
 IMPORT OS
 
 
+x = 5
+result = "Even" if x % 2 == 0 else "Odd"
+
+impar o par com uma linha
+
+
 """
+

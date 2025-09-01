@@ -63,4 +63,27 @@ funções =
 
 
 
-LIMPAR TERM
+LIMPAR TERMinal  / import os
+comando os.system('cls')
+
+range(5) 
+- range(5) generates numbers from 0 to 4.
+- You can also use range(start, stop, step) for more control.
+
+range(1, 10, 2)
+print = 1 
+
+
+.replace(',', ' ') funçao para converter uma string em outra string
+
+outra forma de usar esse metodo é usar a expressao regular
+
+
+tem que importar 
+import re
+
+nome = re.sub(
+    r'[^0-9]',  #^ quer dizer que tudo não for numero u inteiro, tira
+    '',  # mundando para isso aki, que é nada
+    'nome' # imput pelo cliente
+)

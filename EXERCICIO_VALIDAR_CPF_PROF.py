@@ -1,4 +1,8 @@
-cpf = str(input("Enter your CPF: "))
+cpf = str(input("Enter your CPF: ")) \
+    .replace(',', '') \
+    .replace('.', '') \
+    .replace(' ', '') \
+    .replace(',', '')
 
 nine_digits = cpf[:9] # slicing the str, using : and the 9 means that the function will stop at index 9
 countdown = 10
@@ -42,3 +46,4 @@ if digit_str2 != ten_digit:
 
 else:
     print("Second Digit passed, CPF is OK!")
+                                                                                                                                                                                        
