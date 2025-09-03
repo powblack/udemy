@@ -77,4 +77,22 @@ no terminal fique na mesma linha do print, ou seja, ele evita a quebra de linha,
 o valor iria para linha de baixo, com o end=" " faz com que o valor input fique na mesma linha do output.
 
 
+
+def multiplo_de(numero, multiplo): #parametros
+    resultado = numero % multiplo == 0 se o resto da divisao de um numero pelo outro for 0 entao é True
+    print(f'{numero} é múltiplo de {multiplo}?', end=' ')# quebra de linha = end=""
+    print(resultado)
+ 
+ 
+multiplo_de(16, 8) #argumentos
+multiplo_de(15, 3)
+multiplo_de(10, 2)
+
+resultado 
+16 é múltiplo de 8? True # o True fica na linha por conta da quebra de linha
+15 é múltiplo de 3? True
+10 é múltiplo de 2? True
+
+um número é divisivel pelo outro se na divisao não sobra ou não ter nenhum valor quebrado.
+
 """
