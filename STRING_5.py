@@ -20,3 +20,15 @@ print(r"teste \"teste\" ")
 # Outro exemplo para o codigo ficar mais limpo é usar aspa simples e duplas
 
 print('"teste"')
+
+"""
+conversão de tipos
+type convertion, tpycasting, coercion
+tipos imutáveis e primitivos
+str, int, float, bool
+
+
+
+"""
+
+print(int('1') + int('1'))
